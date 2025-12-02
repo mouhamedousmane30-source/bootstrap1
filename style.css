@@ -1,0 +1,311 @@
+.section1{
+    height: 100vh;
+    background-image: url(menu.jpg); background-size: cover; background-position: center;
+    display: flex; justify-content: center; align-items: center;
+    overflow: hidden; text-align: center;
+}
+.overlay{
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);
+}
+.contenus1{
+
+    padding: 20px;
+    color: white;
+    z-index: 2;
+}
+.contenus1 h1{
+    font-size: 4em;
+    margin-bottom: 0.2em;
+    font-weight: bold;
+}
+
+.contenus1 p{
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.btn{
+    display: inline-block; padding: 15px 30px;
+    text-decoration: none;
+    border-radius:30px ;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition background-color: 0.3 ease;
+    background-color:#b8860b;
+}
+
+
+/* Styles généraux pour la page */
+
+
+/* Conteneur principal pour les 3 éléments */
+.info-section {
+    display: flex; /* Active Flexbox */
+    justify-content: space-evenly; /* Espace les éléments de manière égale */
+    width: 100%; /* Largeur du conteneur pour l'exemple */
+    /* max-width: 1100px; */
+    text-align: center; /* Centre le texte dans chaque colonne */
+    
+}
+
+/* Style de chaque colonne (élément d'information) */
+.info-item {
+    flex-basis: 30%; /* Donne une base de largeur à chaque élément */
+    padding: 20px;
+}
+
+/* Conteneur des icônes */
+.icon-container {
+    margin-bottom: 10px;
+}
+
+/* Style de l'icône (ajustez la taille et la couleur) */
+.icon {
+    /* Pour avoir des icônes plus grandes, nous utilisons font-size */
+    font-size: 48px; 
+    /* La couleur jaune/dorée de l'image */
+    color: #b8860b; 
+    /* Si vous utilisiez des images ou des polices d'icônes, vous auriez ici d'autres propriétés */
+    display: flex;
+    justify-content: center; align-items: center;
+}
+
+/* Style du titre (Chef Étoilé, Horaires, Emplacement) */
+.title {
+    font-size: 1.5em;
+    font-weight: normal; /* Le titre semble avoir un poids de police normal/léger */
+    color: black; /* Couleur de texte plus foncée */
+    margin: 5px 0;
+}
+
+/* Style de la description */
+.description {
+    font-size: 1em;
+    color: gray; /* Couleur de texte plus claire */
+    margin-top: 5px;
+}
+
+
+
+/* Styles généraux de la section */
+.specialties-section {
+    font-family: 'Georgia', serif; /* Garder la même police élégante */
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f8f8; /* Un fond légèrement gris pour démarquer la section */
+}
+
+/* Style de l'en-tête */
+.section-header h1 {
+    font-size: 2.5em;
+    font-weight: normal; /* Poids léger pour le titre */
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+/* Séparateur/Soulignement doré */
+.separator {
+    width: 60px;
+    height: 1px;
+    background-color: #b8860b; /* Couleur dorée/jaune */
+    border: none;
+    margin: 0 auto 40px auto; /* Centre le trait et ajoute de l'espace en bas */
+}
+
+/* Conteneur Flexbox pour les cartes */
+.specialties-container {
+    display: flex;
+    justify-content: center; /* Centre les cartes */
+    gap: 30px; /* Espace entre les cartes */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style de chaque carte */
+.specialty-card {
+    background-color: #ffffff;
+    flex-basis: 30%; /* Donne une largeur de base aux cartes */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 15px; /* Espace à l'intérieur de la carte */
+    /* Ombre légère pour donner l'effet de "pop-out" */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Conteneur pour l'image (pour gérer l'alignement et les bordures) */
+.image-wrapper {
+    width: 100%;
+    /* Pour que le wrapper blanc autour de l'image ressemble à l'original */
+    padding: 10px; 
+    box-sizing: border-box; /* Inclut le padding dans la largeur/hauteur */
+    display: inline-block;
+}
+
+/* Style de l'image */
+.dish-image {
+    width: 100%;
+    height: 250px; /* Définir une hauteur fixe pour des images uniformes */
+    object-fit: cover; /* Assure que l'image couvre le conteneur sans être déformée */
+    border-radius: 4px; /* Coins légèrement arrondis pour l'image */
+}
+
+/* Style du titre du plat */
+.dish-title {
+    font-size: 1.3em;
+    font-weight: normal;
+    color: #444444;
+    margin: 15px 0 5px 0;
+}
+
+/* Style de la description du plat */
+.dish-description {
+    font-size: 0.9em;
+    color: #777777;
+    margin: 0 0 10px 0;
+}
+
+
+/* Styles généraux de la section de contact */
+.contact-section {
+    font-family: Arial, sans-serif; /* Utiliser une police claire pour le contraste */
+    background-color: #222222; /* Fond noir/gris très foncé comme sur l'image */
+    padding: 80px 20px;
+    color: #ffffff; /* Texte blanc par défaut */
+}
+
+/* Style du titre central */
+.contact-title {
+    font-size: 2.8em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Séparateur/Soulignement doré */
+.separator {
+    width: 60px;
+    height: 1px;
+    background-color: #b8860b; /* Couleur dorée/jaune */
+    border: none;
+    margin: 0 auto 50px auto; /* Centre le trait et ajoute de l'espace en bas */
+}
+
+/* Conteneur Flexbox pour les deux colonnes (Informations et Formulaire) */
+.contact-content-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espace entre les deux colonnes */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Colonne de gauche : Informations */
+.contact-info {
+    flex-basis: 40%; /* Donne environ 40% de la largeur */
+    padding-top: 20px;
+}
+
+/* Styles pour chaque bloc d'information (Téléphone, Adresse, Horaires) */
+.info-item {
+    margin-bottom: 25px;
+    display: flex; /* Utilise flex pour aligner icône et texte si désiré, mais ici on les laisse empilés */
+    flex-direction: column;
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.info-item .icon {
+    font-size: 24px;
+    color: #b8860b; /* Couleur dorée pour l'icône */
+    margin-right: 10px;
+}
+
+.info-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    /* Pour placer l'icône et le titre sur la même ligne */
+    display: inline-block; 
+}
+
+.info-details {
+    margin-top: 5px;
+    color: #cccccc;
+    line-height: 1.6;
+    padding-left: 30px; /* Décalage pour aligner sous le titre */
+}
+
+/* Correction pour aligner l'icône et le titre ensemble */
+.info-item h3 {
+    display: flex;
+    align-items: center;
+}
+.info-item h3 .icon {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+
+/* Colonne de droite : Conteneur du Formulaire */
+.contact-form-container {
+    flex-basis: 50%; /* Donne environ 50% de la largeur */
+    background-color: #ffffff; /* Fond blanc du formulaire */
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ligne pour nom et email */
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form-row input {
+    flex: 1; /* Permet aux champs de prendre l'espace égal */
+}
+
+/* Styles des champs de saisie (input et textarea) */
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box; /* Inclut padding et border dans la largeur/hauteur */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999999;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Permet de redimensionner uniquement verticalement */
+}
+
+/* Style du bouton d'envoi */
+.submit-button {
+    background-color: #b8860b; /* Couleur dorée/jaune */
+    color: #ffffff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #a0750a; /* Assombrir légèrement au survol */
+}
